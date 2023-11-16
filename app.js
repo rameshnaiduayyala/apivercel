@@ -17,7 +17,7 @@ import externalAuthRoute from "./src/routes/external.auth.router.js";
 import db_sync from "./src/models/db.sync.js";
 import cors from "cors";
 
-const port = process.env.PORT;
+const port = process.env.PORT || 2000;
 const app = express();
 app.use(cors());
 app.use(express.json());

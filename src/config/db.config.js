@@ -9,12 +9,12 @@ const sequelize = new Sequelize({
   database: process.env.DB_NAME,
   host: process.env.DB_HOST,
   port: 5432,
-  // dialectOptions: {
-  //   ssl: {
-  //     require: true,
-  //     rejectUnauthorized: false
-  //   }
-  // },
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  },
   define: {
     freezeTableName: true
   },
