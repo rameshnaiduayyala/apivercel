@@ -38,6 +38,6 @@ app.use('/api/imprestproduct', imprestProductRoute);
 app.use('/api/role/check', externalAuthRoute);
 db_sync();
 
-app.listen(port, () => {
+app.listen(port,'0.0.0.0' ,() => {
   console.log(`Server is running on port ${port}`);
 });
